@@ -170,12 +170,15 @@ alias ghgn='gh gist clone'
 # alias ghsu='gh search users'
 # alias ghsm='gh search commits'
 
-# # Extension Commands (gh extension)
+# Extension Commands (gh extension)
 # alias ghei='gh extension install'
 # alias ghel='gh extension list'
 # alias gher='gh extension remove'
 # alias gheu='gh extension upgrade'
 # alias ghec='gh extension create'
+# alias gheb='gh extension browse'
+# alias ghes='gh extension search'
+# alias ghex='gh extension exec'
 
 # ============================================
 # RARELY USED (Commented Out)
@@ -343,6 +346,7 @@ function gh-alias_plugin_unload() {
     unalias ghul ghuv 2>/dev/null
     unalias ghpcw ghpmd ghpms ghicw 2>/dev/null
     unalias ghgc ghgv ghgl ghge ghgd ghgn 2>/dev/null
+    unalias ghei ghel gher gheu ghec gheb ghes ghex 2>/dev/null
     
     # Unset helper functions
     unfunction ghrc-cd ghpb ghib gh-status ghpc-current 2>/dev/null
